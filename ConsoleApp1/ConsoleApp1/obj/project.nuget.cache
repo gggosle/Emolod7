@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lvusABYKlfS+7fNLaV3Vv3coZYUkYXcCQCxyPOhD6X/skVCmnJBESy0ww9X5UOfNsgPBh/BC8O/9X67GBw6SKw==",
+  "success": true,
+  "projectFilePath": "/home/gosle/RiderProjects/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "/home/gosle/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.2/microsoft.aspnetcore.app.ref.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
