@@ -11,14 +11,14 @@ public class Engine
         this.helper = help;
 
     }
-    Monster MonsterGen(int lvl)
+    public Monster MonsterGen(int lvl)
     {
         string[] Names = {"Murloc", "Reaper", "Dark Ganon", "The Daedra", "Frieza", "Darkspawn Ogre", "Head Crab", "Abomination", "Brutalisk", "Spriggan"};
         Monster monster = new Monster(Names[rand.Next(0, 10)], rand.Next(lvl-1, lvl+2));
         return monster;
     }
 
-    Player PlayerGen()
+    public Player PlayerGen()
     {
         int choice = helper.GetVal();
         Player player = null;
