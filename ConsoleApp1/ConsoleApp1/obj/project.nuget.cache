@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tqdBLUFnJRa2zSqZLqtgWX6+QI5vMp26qLv3kg1qOOY+CYnD1C6wMQ/q93bAimUXSLJ8W0z9lJ0MbsuFqiSmgg==",
+  "dgSpecHash": "lSxNlgnoxXNZkuDOszqewq0lJKGcjI3MPvfugtlF0jfLtk+OCdSzH0JJEKZaJI8uKa8/anqxpyrStJsOKJ1j3A==",
   "success": true,
   "projectFilePath": "/home/gosle/Emolod7/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
   "expectedPackageFiles": [
-    "/home/gosle/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.2/microsoft.aspnetcore.app.ref.7.0.2.nupkg.sha512"
+    "/home/gosle/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.3/microsoft.aspnetcore.app.ref.7.0.3.nupkg.sha512"
   ],
   "logs": []
 }

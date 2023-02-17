@@ -2,14 +2,8 @@ namespace HomeWork;
 
 public class Shield: Build
 {
-    
-    private int defense = 0;
-
-    public Shield(int defense, string name) : base(name)
+    public Shield(int defense, string name, int price) : base(defense, price)
     {
-        this.defense = defense;
+        this.name = name;
     }
-    public void setDefense(int defense) => this.defense = defense;
-    public int getDefense() => this.defense ;
-
 }

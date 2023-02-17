@@ -1,13 +1,17 @@
 namespace HomeWork;
 
-public abstract class Build
+public abstract class Build : NameTrait
 {
-    private string name = "";
-
-    public Build(string name)
+    protected int property = 0;
+    protected int price = 0;
+    public Build(int property, int price)
     {
-        this.name = name;
+        
+        this.property = property;
+        this.price = price;
+
     }
-    public void setName(string name) => this.name = name;
-    public string getName() => this.name;
+    public void setProperty(int property) => this.property = property;
+    public int getProperty() => this.property;
+    public int getPrice() => this.price;
 }

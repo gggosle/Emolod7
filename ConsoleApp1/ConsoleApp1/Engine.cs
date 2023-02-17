@@ -8,8 +8,6 @@ public class Engine
     public Engine(Random rand)
     {
         this.rand = rand;
-        
-
     }
     public Monster MonsterGen(int level)
     {
@@ -66,11 +64,34 @@ public class Engine
     public Shield ShieldGen()
     {
         string[] Names = {"Spiralhorn Shield", "Kite Shield", "Erdtree Greatshield", "Jellyfish Shield", "Brass Shield"};
-        return new Shield(rand.Next(3, 21), Names[rand.Next(0, 5)]);
+        int hp = rand.Next(3, 21);
+        return new Shield(hp, Names[rand.Next(0, 5)], (50 * hp) + rand.Next(20, 100));
     }
     public Weapon WeaponGen()
     {
+        int hp = rand.Next(3, 21);
         string[] Names = {"Hidden Blade", "Blades of Chaos", "Moonlight Greatsword", "Pandora", "Energy Sword"};
-        return new Weapon(rand.Next(3, 21), Names[rand.Next(0, 5)]);
+        return new Weapon(hp, Names[rand.Next(0, 5)], (50 * hp) + rand.Next(20, 100));
+    }
+
+    public Potion PotionGen()
+    {
+        int size = rand.Next(1, 4);
+        int price = size * 400 + rand.Next(20, 200);
+        switch (rand.Next(0, 5))
+        {
+            case 0:
+                return new AgilityPotion(size, price);
+                break;
+            case 1:
+                return new EndurancePotion(size, price);
+                break;
+            case 2:
+                return new StrenghtPotion(size, price);
+                break;
+            default:
+                return new HealthPointPotion(size, price);
+                break;
+        }
     }
 }

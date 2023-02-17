@@ -1,3 +1,4 @@
+using System.Data;
 using System.Runtime.CompilerServices;
 
 namespace HomeWork;
@@ -15,6 +16,7 @@ public class Monster : Base
 
     public Monster( string name,int level, Random rand): base(name, level)
     {
+        this.level = level;
         this.harm = level * 9;
         this.defense = level * 12;
         this.exp = level * 50;
@@ -25,10 +27,12 @@ public class Monster : Base
             new Backstab(), new BurnKnuckle(), new FireBall(), new ForceSprint(), new HurricaneKick(),
             new PsychoCrusher(), new SplitPunch(), new TigerKnee(), new SoulFist(rand)
         };
+        this.cash = level * 30 + rand.Next(0, 300);
     }
     ~Monster()
     { }
-   
+
+    public int getCash() => this.cash;
     public void setHarm(int harm) => this.harm = harm;
   
     public int getHarm() => this.harm;

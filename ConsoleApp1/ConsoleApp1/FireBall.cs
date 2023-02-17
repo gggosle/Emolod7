@@ -2,7 +2,6 @@ namespace HomeWork;
 
 public class FireBall: UComS, CombatSkill
 {
-    private int skillDamage = 50;
     public FireBall() : base()
     {
         this.skillDamage = 50;

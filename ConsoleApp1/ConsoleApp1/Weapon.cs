@@ -2,12 +2,8 @@ namespace HomeWork;
 
 public class Weapon: Build
 {
-    private int harm = 0;
-
-    public Weapon(int harm, string name) : base(name)
+    public Weapon(int harm, string name, int price) : base(harm, price)
     {
-        this.harm = harm;
+        this.name = name;
     }
-    public void setHarm(int defense) => this.harm = defense;
-    public int getHarm() => this.harm ;
 }

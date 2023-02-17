@@ -2,11 +2,10 @@ using System.Net.Mail;
 
 namespace HomeWork;
 
-public abstract class UComS
+public abstract class UComS : NameTrait
 {
     protected int skillDamage = 0;
     protected int skillCost = 0;
-    protected string name;
 
     public UComS() => this.name = this.GetType().Name;
 
@@ -24,6 +23,4 @@ public abstract class UComS
         }
         pl2.setHealth(pl2.getHealth() - this.skillCost);
     }
-
-    public string getName() => this.name;
 }

@@ -2,7 +2,6 @@ namespace HomeWork;
 
 public class SoulFist:UComS, CombatSkill
 {
-    private int skillDamage = 0;
     private Random rand = null;
     public SoulFist(Random rand) : base()
     {

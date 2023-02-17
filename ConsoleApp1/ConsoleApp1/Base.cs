@@ -1,13 +1,13 @@
 namespace HomeWork;
 
-public abstract class Base
+public abstract class Base : NameTrait
 {
-    protected string name = "";
     protected int health = 0;
     protected int healthMax = 0;
     protected int energy = 0;
     protected int exp = 0;
     protected int level = 0;
+    protected int cash = 0;
 
     public Base( string name, int level)
     {
@@ -56,11 +56,6 @@ public abstract class Base
         Console.WriteLine($" / {this.healthMax}");
         Console.ForegroundColor = ConsoleColor.White;
     }
-    
-    public void setName(string name) => this.name = name;
-
-    public string getName()=> this.name;
- 
     public void setHealth(int health) => this.health = health;
  
     public int getHealth() => this.health;
@@ -68,9 +63,6 @@ public abstract class Base
     public void setEnergy(int energy) =>  this.energy = energy;
 
     public int getEnergy() => this.energy;
-   
-    public void setExp(int exp) => this.exp = exp;
-
     public int getExp() => this.exp;
    
     public void setLvl(int level) => this.level = level;
