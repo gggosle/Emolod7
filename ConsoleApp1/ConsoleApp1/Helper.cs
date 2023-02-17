@@ -1,14 +1,16 @@
 namespace HomeWork;
 
-public class Helper
+static class Helper
 { 
-    public int GetVal()
+    public static int GetVal()
     {
         return Convert.ToInt32(Console.ReadLine());
     }
 
-    public string GetString()
+    public static string GetString()
     {
+        
+        Console.WriteLine("Your name: ");
         return Console.ReadLine();
     }
 
