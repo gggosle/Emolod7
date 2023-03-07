@@ -8,7 +8,10 @@
 *.log
 *.log.*
 *.sig
-.idea
+
+/.idea
+/ConsoleApp1/.idea
+
 
 pkg/
 src/
